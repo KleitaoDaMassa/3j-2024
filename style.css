@@ -9,32 +9,6 @@
 
 *{
     background-color: crimson;
-    color:white;
-}
-
-.conteudo-principal{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-max-width: 1200px;
-width: 100%;
-margin: 0px;
-}
-
-.titulo-principal{
-    text-align: center;
-    width: 100%;
-    font-size: 32px;
-}
-
-.botao{
-    background-color: black;
     color: #FFFFFF;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    font-size: 18px;
-    padding: 1cm;
-}
 
+}
