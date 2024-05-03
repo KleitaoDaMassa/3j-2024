@@ -40,15 +40,33 @@
     padding: 1cm;
     border-bottom:4px #5FFF57;
     border-left:2px #ffffff;
-    border-right:2px #FFFFFF;
+    border-right:2px #ffffff;
 
 }
 
-.botao :first-child{
-    border-radius: 20px 20px 0px 0px;
+.botoes{
+    display: block;
 }
 
-.botao :last-child{
+.botao:first-child{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.botao:last-child{
     border-radius: 0px 0px 20px 20px;
 }
 
+@media screen and (min-width: 700px){
+    .botoes{
+        display: flex;
+    }
+
+    .botao:first-child{
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .botao:last-child{
+        border-radius: 0px 20px 20px 0px    ;
+    }
+    
+}
