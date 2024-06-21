@@ -12,19 +12,25 @@ let minutos;
 let horas;
 let dias;
 
-segundos (tempoObjetivo1-agorạ/1000)
+segundos = (tempoObjetivo1-agora)/1000
 minutos = segundos/60
 horas = minutos/60
 dias = horas/24
 
+segundos=Math.floor(segundos);
+minutos=Math.floor(minutos);
+horas=Math.floor(horas);
+dias=Math.floor(dias);
 
 
-tempo[0].textContent= tempoObjetivo1-agora
-tempo[1].textContent= textContent = agora
+
+tempo[0].textContent= `faltam ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+
+
 
 
 console.log(tempo);
-for(let i = 0; 1 < botoes.length ; i++){
+for(let i = 0; i < botoes.length ; i++){
     botoes[i].onclick = function() {
         for (j=0;j<botoes.length;j++){
             botoes[j].classList.remove("ativo");
